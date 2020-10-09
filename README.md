@@ -12,3 +12,4 @@
 * NPM
 * Python3
 * Pip
+* Zsh (With OhMyZsh & simple theme)
