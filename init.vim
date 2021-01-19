@@ -14,7 +14,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdtree',{'on':'NERDTreeToggle'}
 
-Plug 'sheerun/vim-polyglot'
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
