@@ -7,7 +7,6 @@
 
 ### Software List
 * Neovim
-* SDK Man
 * Node
 * NPM
 * Python3
