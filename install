@@ -12,17 +12,10 @@ mkdir -p ~/.config/nvim
 cp -fv ./init.vim ~/.config/nvim
 echo "Done"
 
-echo "Download and installing SDKMAN Script ..."
-bash -c "$(curl -fsSL https://get.sdkman.io)"
-
 echo "Downloading and install getpip..."
 curl -s -o get-pip.py "https://bootstrap.pypa.io/get-pip/get-pip.py"
 bash -c "python ./get-pip.py"
 
 echo "Download and install OMZ: ..."
 bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-echo "Pre-create SSH RSA Public/Private keys"
-ssh-keygen
-
 
