@@ -1,8 +1,7 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
-source ~/.vimrc
 
-call plug#begin(stdpath('data').'/plugged')
+call plug#begin('~/.vim/plugged')
 
 Plug 'neomake/neomake'
 Plug 'terryma/vim-multiple-cursors'
@@ -21,6 +20,3 @@ Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
-let g:neomake_python_enabled_markers = ['pylint'] 
-
-let g:airline_theme='dark'

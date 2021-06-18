@@ -3,17 +3,16 @@
 echo "This script might run into error if some of packages in [zip,curl,openssh,neovim,python,node,npm] are not installed"
 
 echo "Installing VimPlug..."
-sh -c 'curl -s -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+sh -c 'curl -s -fLo ~/.vim/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 echo "Done"
 
 echo "Copying init.vim ..."
-mkdir -p ~/.config/nvim
-cp -fv ./init.vim ~/.config/nvim
+cp -fv ./vimrc ~/.vimrc
 echo "Done"
 
 echo "Downloading and install getpip..."
-curl -s -o get-pip.py "https://bootstrap.pypa.io/get-pip/get-pip.py"
+bash -c "curl -fLo get-pip.py https://bootstrap.pypa.io/get-pip.py"
 bash -c "python ./get-pip.py"
 
 echo "Download and install OMZ: ..."
