@@ -11,10 +11,5 @@ echo "Copying init.vim ..."
 cp -fv ./vimrc ~/.vimrc
 echo "Done"
 
-echo "Downloading and install getpip..."
-bash -c "curl -fLo get-pip.py https://bootstrap.pypa.io/get-pip.py"
-bash -c "python ./get-pip.py"
-
 echo "Download and install OMZ: ..."
 bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
